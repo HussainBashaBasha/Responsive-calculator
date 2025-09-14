@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calculator {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  width: 320px;
+
+  /* 👉 Add this line for border */
+  border: 3px solid #00cec9; /* You can change color as needed */
+}
+
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: right;
+  background: #000;
+  color: #0f0;
+  border: none;
+  border-radius: 6px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: white;
+}
+
+/* Number Buttons */
+.number {
+  background-color: #0984e3;
+}
+
+.number:hover {
+  background-color: #74b9ff;
+}
+
+/* Operator Buttons */
+.operator {
+  background-color: #d63031;
+}
+
+.operator:hover {
+  background-color: #ff7675;
+}
+
+/* Equal Button (optional extra highlight) */
+.equal {
+  grid-column: span 2;
+}
